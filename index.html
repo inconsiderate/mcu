@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Top Banner -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9916141306714493"
+     data-ad-slot="3566882967"
+     data-ad-format="auto"></ins>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+  <script id="currentTemplate" type="text/x-handlebars-template">
+    {{#if current}}
+      {{#each current}}
+      <div class="ui stackable two column grid">
+          <div class="blurring dimmable image column" style="flex-grow: 1; background-color: black;">
+            <div class="ui dimmer">
+              <div class="content">
+                <div class="center">
+                  <div class="ui inverted button"><a href={{{trailer}}} target="_blank"><i class="video play outline icon"></i> Watch Trailer</a></div>
+                </div>
+              </div>
+            </div>
+            <img class="ui fluid image" src={{banner}}>
+          </div>
+
+        <div class="column">
+          <div class="ui fluid card">
+            <div class="content">
+              <img class="right floated avatar large ui image" src={{logo}}>
+              <div class="header">{{title}}</div>
+              <div class="meta">{{date}}</div>
+              <div class="description">
+                <p>{{description}}</p>
+                {{#if trakt}}
+                <p class="trakt-link"><a href={{{trakt}}} target="_blank">trakt / imdb <i class="right chevron icon"></i></a></p>
+                {{/if}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="ui section divider"></div>
+    {{/each}}
+    {{else}}
+    <p>There was an error loading content... please reload the page.</p>
+    {{/if}}
+  </script>
+
+  <script id="upcomingTemplate" type="text/x-handlebars-template">
+    {{#if upcoming}}
+    {{#each upcoming}}
+    <div class="card">
+      <div class="content">
+      <img class="left floated mini ui image" src={{logo}}>
+        <div class="header">{{title}}</div>
+        <div class="meta">
+          <span class="cinema">{{date}}</span>
+        </div>
+        <div class="description">{{description}}</div>
+
+        <div class="extra content">
+          {{#if trailer}}
+          <div class="ui bottom left attached label"><a href={{{trailer}}} target="_blank"><i class="video play outline icon"></i>Play Trailer</a></div>
+          {{/if}}
+          {{#if trakt}}
+
+          <div class="ui bottom right attached label"><a>trakt / imdb <i class="right chevron icon"></i></a></div>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+    {{/each}}
+    {{/if}}
+  </script>
+
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="//oss.maxcdn.com/semantic-ui/2.1.7/semantic.min.js"></script>
+  <link rel="stylesheet" type="text/css" class="ui" href="//oss.maxcdn.com/semantic-ui/2.1.7/semantic.min.css">
+  <script src="handlebars-v4.0.5.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script type="text/javascript" src="index.js"></script>
+
+  <title>Marvel Cinematic Universe Calendar</title>
+</head>
+
+<body>
+
+<div class="ui container">
+
+  <h1 class="ui right floated header">Marvel Cinematic Universe Calendar</h1>
+
+  <div class="ui clearing divider"></div>
+
+  <div class="ui stackable two column grid">
+    <div class="row">
+      <div class="column">
+        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=lh599j7okgva72o6um13nnemd4%40group.calendar.google.com&amp;color=%231B887A&amp;ctz=America%2FVancouver" style="border-width:0" width="100%" height="300" frameborder="0" scrolling="no"></iframe>
+      </div>
+      <div class="column">
+        <p></p>
+        <p>This is a list of all of the movies and TV shows in the MCU, the dates the movies will premiere, and when each episode will be aired.</p>
+        <strong>If you use Google Calendar, you can easily import this entire calendar into your own by clicking the + symbol at the bottom right of the calendar.</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui clearing divider"></div>
+
+  <h2 class="ui left header">2016</h2>
+  <section id="currentList"></section>
+
+  <div class="ui large header">2017</div>
+  <div id="upcomingList" class="ui two stackable cards"></div>
+
+  <div class="ui section divider"></div>
+
+  <div class="ui large header">2018</div>
+  <div class="ui stackable two column grid list">
+    <div class="item column">
+      <img class="ui avatar image" src="public/icons/marvel.png">
+      <div class="content">
+        <div class="header">February 16: Black Panther</div>
+      </div>
+    </div>
+    <div class="item column">
+      <img class="ui avatar image" src="public/icons/avengers.png">
+      <div class="content">
+        <div class="header">May 4: Avengers: Infinity War, Part 1</div>
+      </div>
+    </div>
+    <div class="item column">
+      <img class="ui avatar image" src="public/icons/marvel.png">
+      <div class="content">
+        <div class="header">July 6: Ant-Man and the Wasp</div>
+      </div>
+    </div>
+    <div class="item column">
+      <img class="ui avatar image" src="public/icons/marvel.png">
+      <div class="content">
+        <div class="header">July 13: Untitled Fox Marvel film</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui section divider"></div>
+
+  <div class="ui large header">2019</div>
+  <div class="ui stackable two column grid list">
+    <div class="item column">
+      <img class="ui avatar image" src="public/icons/marvel.png">
+      <div class="content">
+        <div class="header">March 8: Captain Marvel</div>
+      </div>
+    </div>
+    <div class="item column">
+      <img class="ui avatar image" src="public/icons/avengers.png">
+      <div class="content">
+        <div class="header">May 3: Avengers: Infinity War, Part 2</div>
+      </div>
+    </div>
+    <div class="item column">
+      <img class="ui avatar image" src="public/icons/marvel.png">
+      <div class="content">
+        <div class="header">July 12: Inhumans</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui section divider"></div>
+
+  <div class="ui large header">2020</div>
+  <div class="ui stackable two column grid list">
+    <div class="item column">
+      <img class="ui avatar image" src="public/icons/marvel.png">
+      <div class="content">
+        <div class="header">May 1: Untitled Marvel Studios film</div>
+      </div>
+    </div>
+    <div class="item column">
+      <img class="ui avatar image" src="public/icons/marvel.png">
+      <div class="content">
+        <div class="header">July 10: Untitled Marvel Studios film</div>
+      </div>
+    </div>
+    <div class="item column">
+      <img class="ui avatar image" src="public/icons/marvel.png">
+      <div class="content">
+        <div class="header">November 6: Untitled Marvel Studios film</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui section divider"></div>
+
+  <div class="ui large header">Unknown</div>
+  <div class="ui list">
+    <div class="item column">
+      <img class="ui avatar image" src="public/icons/marvel.png">
+      <div class="content">
+        <div class="header">Unknown: The Defenders (Netflix)</div>
+      </div>
+    </div>
+    <div class="item column">
+      <img class="ui avatar image" src="public/icons/marvel.png">
+      <div class="content">
+        <div class="header">Unknown: Damage Control (Unknown Network)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Banner -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-9916141306714493"
+     data-ad-slot="2229750562"></ins>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</body>
+</html>
