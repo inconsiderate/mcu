@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Top Banner -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-9916141306714493"
-     data-ad-slot="3566882967"
-     data-ad-format="auto"></ins>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
   <script id="currentTemplate" type="text/x-handlebars-template">
     {{#if current}}
       {{#each current}}
@@ -20,7 +9,11 @@
             <div class="ui dimmer">
               <div class="content">
                 <div class="center">
+                  {{#if trailer}}
                   <div class="ui inverted button"><a href={{{trailer}}} target="_blank"><i class="video play outline icon"></i> Watch Trailer</a></div>
+                  {{ else }}
+                  <div class="ui inverted button">No Trailer Available (yet)</div>
+                  {{/if}}
                 </div>
               </div>
             </div>
@@ -104,13 +97,24 @@
         <p></p>
         <p>This is a list of all of the movies and TV shows in the MCU, the dates the movies will premiere, and when each episode will be aired.</p>
         <strong>If you use Google Calendar, you can easily import this entire calendar into your own by clicking the + symbol at the bottom right of the calendar.</strong>
+
+        <div class="google">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Text Block -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:336px;height:280px"
+             data-ad-client="ca-pub-9916141306714493"
+             data-ad-slot="6601074564"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="ui clearing divider"></div>
+  <div class="ui section divider"></div>
 
-  <h2 class="ui left header">2016</h2>
   <section id="currentList"></section>
 
   <div class="ui large header">2017</div>
@@ -213,15 +217,34 @@
   </div>
 </div>
 
+
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Banner -->
+<!-- Top Banner -->
 <ins class="adsbygoogle"
-     style="display:inline-block;width:728px;height:90px"
+     style="display:block"
      data-ad-client="ca-pub-9916141306714493"
-     data-ad-slot="2229750562"></ins>
+     data-ad-slot="3566882967"
+     data-ad-format="auto"></ins>
 <script>
   (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
+<div class="ui black inverted vertical footer segment">
+  <p></p>
+  <div class="ui center aligned">
+      <h4 class="ui center aligned inverted header">
+        made with <i class="red heart icon"></i> and handlebars
+      </h4>
+  <div class="ui center aligned">
+    <h1 class="ui center aligned inverted header">
+      <a href="https://github.com/inconsiderate/mcu"><i class="github icon"></i></a><a href="https://twitter.com/michaelkant"><i class="twitter icon"></i></a>
+      <p>michael kant</p>
+    </h1>
+  </div>
+    <div class="container"></div>
+  </div>
+</div>
+
 
 </body>
 </html>
