@@ -23,7 +23,7 @@ a:hover {
     color:black;
 }
 
-.card {
+#currentList .card {
   box-shadow: none !important;
 }
 
