@@ -14,6 +14,7 @@ $( document ).ready(function() {
             logo: 'public/icons/shield.png',
             banner: 'public/banners/agentcarterS02.png',
             trailer: 'https://www.youtube.com/watch?v=j7jlEes2q7U',
+            watchnow: 'http://abc.go.com/shows/marvels-agent-carter/episode-guide',
             trakt: 'http://trakt.tv/shows/marvel-s-agent-carter/seasons/2'
         },
         {
