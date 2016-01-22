@@ -12,8 +12,10 @@
                 <div class="center">
                   {{#if watchnow}}
                   <div class="ui inverted button"><a href={{{watchnow}}} target="_blank"><i class="video play outline icon"></i> Watch Now</a></div>
-                  {{ else }}
+                  {{ else if trailer }}
                   <div class="ui inverted button"><a href={{{trailer}}} target="_blank"><i class="video play outline icon"></i> Watch Trailer</a></div>
+                  {{ else }}
+                  <div>No Media Available Yet</div>
                   {{/if}}
                 </div>
               </div>
