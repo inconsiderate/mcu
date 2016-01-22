@@ -9,7 +9,7 @@ $( document ).ready(function() {
     var currentData = {current: [
         {
             title: "Agent Carter - Season 2 Premiere",
-            date: 'January 19th, 2016',
+            date: 'Currently On Air',
             description: "Dedicated to the fight against new atomic age threats in the wake of World War II, Peggy must now journey from New York City to Los Angeles for her most dangerous assignment yet.",
             logo: 'public/icons/shield.png',
             banner: 'public/banners/agentcarterS02.png',
@@ -25,7 +25,7 @@ $( document ).ready(function() {
             trakt: 'http://trakt.tv/shows/marvel-s-agents-of-s-h-i-e-l-d/seasons/3'
         },
         {   title: "Daredevil - Season 2 Premiere",
-            date: 'Marth 25, 2016',
+            date: 'March 18th, 2016',
             description: "Matt Murdock was blinded in a tragic accident as a boy, but imbued with extraordinary senses. Murdock sets up practice in his old neighborhood of Hell's Kitchen, New York, where he now fights against injustice as a respected lawyer by day and as the masked vigilante Daredevil by night.",
             logo: 'public/icons/daredevil.png',
             banner: 'public/banners/daredevils02.jpg',
