@@ -75,35 +75,50 @@
   <!--END Upcoming Template Code-->
 
 
-  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript" src="lib/jquery.min.js"></script>
+  <script type="text/javascript" src="lib/jquery-ui.custom.min.js"></script>
+  <script type="text/javascript" src="lib/moment.min.js"></script>
+  <script type="text/javascript" src="lib/fullcalendar.min.js"></script>
+  <script type="text/javascript" src="lib/gcal.js"></script>
   <script type="text/javascript" src="//oss.maxcdn.com/semantic-ui/2.1.7/semantic.min.js"></script>
   <link rel="stylesheet" type="text/css" class="ui" href="//oss.maxcdn.com/semantic-ui/2.1.7/semantic.min.css">
-  <script src="handlebars-v4.0.5.js" type="text/javascript"></script>
+  <script type="text/javascript" src="lib/handlebars-v4.0.5.js"></script>
   <link rel="stylesheet" type="text/css" href="index.css">
-  <script type="text/javascript" src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="fullcalendar.min.css">
+  <script type="text/javascript" src="lib/index.js"></script>
 
   <title>Marvel Cinematic Universe Calendar</title>
 </head>
 
 <body>
 
-<div class="ui inverted segment megaphone">
-  <div class="ui container"><h1 class="ui right floated inverted header">Marvel Cinematic Universe Calendar</h1>
+<div class="ui segment megaphone">
+  <div class="ui container"><h1 class="ui right floated header">Marvel Cinematic Universe Calendar</h1>
     <div class="ui clearing divider"></div>
   </div>
-  <div class="ui container stackable inverted grid">
+  <div class="ui container stackable grid">
 
-    <div class="eight wide column">
-        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=lh599j7okgva72o6um13nnemd4%40group.calendar.google.com&amp;color=%231B887A&amp;ctz=America%2FVancouver" style="border-width:0" width="100%" height="300" frameborder="0" scrolling="no"></iframe>
+    <div class="center aligned two column row">
+      <div class="column" id="calendar"></div>
+      <div class="column">
+        <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=lh599j7okgva72o6um13nnemd4%40group.calendar.google.com&amp;color=%231B887A&amp;ctz=America%2FVancouver" style="border-width:0" height="400" width="auto" frameborder="0" scrolling="no"></iframe>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="eight wide column">
+        <p></p>
+        <h5 class="ui header">This is a list of all of the movies and TV shows in the MCU, the dates the movies will premiere, and when each episode will be aired.</h5>
+        <h5 class="ui header">If you use Google Calendar, you can easily import this entire calendar into your own by clicking the "+ Google Calendar" button at the bottom of the agenda list.</h5>
       </div>
       <div class="eight wide column">
-        <h5 class="ui inverted header">This is a list of all of the movies and TV shows in the MCU, the dates the movies will premiere, and when each episode will be aired.</h5>
-        <h5 class="ui inverted header">If you use Google Calendar, you can easily import this entire calendar into your own by clicking the + symbol at the bottom right of the calendar.</h5>
+        <p></p>
         <script type='text/javascript' src='//eclkmpbn.com/adServe/banners?tid=98284_161537_3'></script>
       </div>
+    </div>
 
-
-  </div>
+    </div>
 </div>
 
 <div class="ui container">
